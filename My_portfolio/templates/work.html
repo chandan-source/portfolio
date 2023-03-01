@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="text" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="{% static 'style/images/favicon.png' %}">
+<title>crea;tink</title>
+<link rel="stylesheet" type="text/css" href="{% static 'style/css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/css/plugins.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/revolution/css/settings.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/revolution/css/layers.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/revolution/css/navigation.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/type/icons.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/css/color/blue.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+</head>
+<body>
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title text-center">Modal Portfolio</h2>
+      <p class="lead text-center">Click on thumbnails to view project details</p>
+      <div class="space30"></div>
+      <div class="portfolio grid-view">
+        <div class="isotope-filter button-group text-center" data-target=".grid-1">
+          <ul>
+            <li><a class="button active" data-filter="*">All</a></li>
+            <li><a class="button" data-filter=".corporate">Commercial</a></li>
+            <li><a class="button" data-filter=".package">Personal</a></li>
+
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tiles tiles-m">
+          <div class="isotope row grid-1">
+            <div class="item grid-sizer col-sm-6 col-md-4 web">
+              <figure class="overlay overlay9"><a href="#myModal1" data-toggle="modal" data-target="#myModal1"></a><img src="{% static 'style/images/art/w1.jpg' %}" alt="" />
+                <figcaption>
+                  <h4>Curabitur Blandit</h4>
+                  <div class="meta mb-0">Business, Works</div>
+                  <!-- /.meta --> </figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+            <div class="item grid-sizer col-sm-6 col-md-4 corporate">
+              <figure class="overlay overlay9"><a href="#myModal2" data-toggle="modal" data-target="#myModal2"></a><img src="{% static 'style/images/art/w2.jpg' %}" alt="" />
+                <figcaption>
+                  <h4>Mollis Euismod Fringilla</h4>
+                  <div class="meta mb-0">News, Corporate</div>
+                  <!-- /.meta --></figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+            <div class="item grid-sizer col-sm-6 col-md-4 mockup">
+              <figure class="overlay overlay9"><a href="#myModal3" data-toggle="modal" data-target="#myModal3"></a><img src="style/images/art/w3.jpg" alt="" />
+                <figcaption>
+                  <h4>Dapibus Quam</h4>
+                  <div class="meta mb-0">Business, Works</div>
+                  <!-- /.meta --></figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+            <div class="item grid-sizer col-sm-6 col-md-4 web">
+              <figure class="overlay overlay9"><a href="#myModal4" data-toggle="modal" data-target="#myModal4"></a><img src="{% static 'style/images/art/w4.jpg' %}" alt="" />
+                <figcaption>
+                  <h4>Fusce Malesuada</h4>
+                  <div class="meta mb-0">News, Corporate</div>
+                  <!-- /.meta --></figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+            <div class="item grid-sizer col-sm-6 col-md-4 package">
+              <figure class="overlay overlay9"><a href="#myModal5" data-toggle="modal" data-target="#myModal5"></a><img src="style/images/art/w5.jpg" alt="" />
+                <figcaption>
+                  <h4>Vehicula Euismod Mollis</h4>
+                  <div class="meta mb-0">Business, Works</div>
+                  <!-- /.meta --></figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+            <div class="item grid-sizer col-sm-6 col-md-4 web mockup">
+              <figure class="overlay overlay9"><a href="#myModal6" data-toggle="modal" data-target="#myModal6"></a><img src="{% static 'style/images/art/w6.jpg' %}" alt="" />
+                <figcaption>
+                  <h4>Vehicula Justo Elit</h4>
+                  <div class="meta mb-0">News, Corporate</div>
+                  <!-- /.meta --></figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+            <div class="item grid-sizer col-sm-6 col-md-4 package">
+              <figure class="overlay overlay9"><a href="#myModal7" data-toggle="modal" data-target="#myModal7"></a><img src="{% static 'style/images/art/w7.jpg' %}" alt="" />
+                <figcaption>
+                  <h4>Ultricies Tellus</h4>
+                  <div class="meta mb-0">Business, Works</div>
+                  <!-- /.meta --></figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+            <div class="item grid-sizer col-sm-6 col-md-4 corporate package">
+              <figure class="overlay overlay9"><a href="#myModal8" data-toggle="modal" data-target="#myModal8"></a><img src="{% static 'style/images/art/w8.jpg' %}" alt="" />
+                <figcaption>
+                  <h4>Dapibus Quam Ligula</h4>
+                  <div class="meta mb-0">Business, Works</div>
+                  <!-- /.meta --></figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+            <div class="item grid-sizer col-sm-6 col-md-4 mockup web">
+              <figure class="overlay overlay9"><a href="#myModal9" data-toggle="modal" data-target="#myModal9"></a><img src="{% static 'style/images/art/w9.jpg' %}" alt="" />
+                <figcaption>
+                  <h4>Fusce Malesuada</h4>
+                  <div class="meta mb-0">News, Corporate</div>
+                  <!-- /.meta --></figcaption>
+              </figure>
+            </div>
+            <!-- /column -->
+          </div>
+          <!--/.row -->
+
+        </div>
+        <!--/.tiles -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal1" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Curabitur Blandit</h2>
+              <p> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. </p>
+              <div class="divide10"></div>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w9-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w4-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w5-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w1-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal2" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Mollis Euismod Fringilla</h2>
+              <p> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. </p>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w3-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w8-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w7-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w6-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal3" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Dapibus Quam</h2>
+              <p> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. </p>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w2-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w1-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w3-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w8-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal4" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Fusce Malesuada</h2>
+              <p> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. </p>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w6-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w7-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w3-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w5-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal5" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Vehicula Euismod Mollis</h2>
+              <p> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. </p>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w1-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w2-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w3-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w4-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal6" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Vehicula Justo Elit</h2>
+              <p> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. </p>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w5-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w9-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w8-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w2-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal7" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Ultricies Tellus</h2>
+              <p> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. </p>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w8-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w7-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w4-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w3-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal8" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Dapibus Quam Ligula</h2>
+              <p> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. </p>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w6-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w7-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w9-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w2-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+        <div class="modal dark-wrapper inverse-text modal-transparent move-from-top" id="myModal9" tabindex="-1" role="dialog"> <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content text-center">
+              <h2 class="post-title">Fusce Malesuada</h2>
+              <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <ul class="basic-gallery">
+                <li><img src="style/images/art/w5-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w7-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w8-full.jpg" alt=""></li>
+                <li><img src="style/images/art/w1-full.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/.modal -->
+
+      </div>
+      <!--/.portfolio -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.light-wrapper -->
+
+  <div class="wrapper gray-wrapper">
+    <div class="container inner">
+      <div class="text-center">
+        <p class="lead">If you like what you see, let's work together.</p>
+        <a href="#" class="btn btn-rounded mb-0">Get in Touch</a> </div>
+      <!-- /.text-center -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.gray-wrapper -->
+
+</div>
+
+</body>
+</html>
