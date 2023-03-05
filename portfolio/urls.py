@@ -16,9 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from My_portfolio.views import *
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('',home),
-    path('work/',my_work,name='work'),
-]
+    path('',home,name='home'),
+    path('work/<str:type>/',my_work,name='work'),
+    path('about',aboutus,name='about'),
+    path('contact',contact,name='contact'),
+    path('blog',blog,name='blog'),
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

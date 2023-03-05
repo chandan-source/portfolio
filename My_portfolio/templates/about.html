@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="text" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="{% static 'style/images/favicon.png' %}">
+<title>crea;tink</title>
+<link rel="stylesheet" type="text/css" href="{% static 'style/css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/css/plugins.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/revolution/css/settings.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/revolution/css/layers.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/revolution/css/navigation.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/type/icons.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style/css/color/blue.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+</head>
+<body class="onepage" data-spy="scroll" data-target=".navbar">
+<div class="content-wrapper">
+  <nav class="navbar dark-wrapper inverse-text">
+    <div class="container">
+      <div class="flex-it">
+        <div class="navbar-header">
+          <div class="navbar-brand"><a href="index2.html"><img src="#" srcset="style/images/logo-light.png 1x',style/images/logo-light@2x.png 2x" alt="" /></a></div>
+          <div class="nav-bars-wrapper">
+            <div class="nav-bars-inner">
+              <div class="nav-bars" data-toggle="collapse" data-target=".navbar-collapse"><span></span></div>
+            </div>
+            <!-- /.nav-bars-inner -->
+          </div>
+          <!-- /.nav-bars-wrapper -->
+        </div>
+        <!-- /.nav-header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home" class="scroll">Home</a> </li>
+            <li><a href="#services" class="scroll">About Us</a> </li>
+            <li><a href="{% url 'work' 'all' %}" class="scroll">Work</a> </li>
+            <li><a href="#about" class="scroll">Blog</a> </li>
+            <li><a href="#contact" class="scroll">Contact Us</a> </li>
+          </ul>
+          <!--/.navbar-nav -->
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.flex-it -->
+    </div>
+    <!--/.container -->
+
+  </nav>
+</div>
+
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title text-center">About the Company</h2>
+      <p class="lead text-center">A company turning ideas into beautiful things</p>
+      <div class="space30"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <figure><img src="{% static 'style/images/art/about.jpg' %}" alt=""></figure>
+        </div>
+        <!-- /column -->
+        <div class="space30 hidden-xs hidden-md hidden-lg"></div>
+        <div class="col-md-6">
+          <h3>Who is behind all this?</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <blockquote class="border">
+            <p>“Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis.”</p>
+          </blockquote>
+          <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+
+      <div class="space70"></div>
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="text-center-sm text-center-xs">Our Team Members</h3>
+          <p class="lead2 text-center-sm text-center-xs">Meet the talents behind</p>
+          <p class="text-center-sm text-center-xs">Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+        </div>
+        <!--/column -->
+        <div class="space20 visible-sm visible-xs"></div>
+        <div class="col-sm-4 col-md-3 text-center">
+          <div class="icon icon-img text-center mb-20"> <img src="{% static 'style/images/art/tm1.jpg' %}" alt=""></div>
+          <h5 class="mb-0">Cory Zamora</h5>
+          <p class="mb-10">Interface Designer</p>
+          <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+          <ul class="social social-color social-s">
+            <li><a href="#"><i class="et-twitter"></i></a></li>
+            <li><a href="#"><i class="et-facebook"></i></a></li>
+            <li><a href="#"><i class="et-pinterest"></i></a></li>
+            <li><a href="#"><i class="et-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <!-- /column -->
+        <div class="col-sm-4 col-md-3 text-center">
+          <div class="icon icon-img text-center mb-20"> <img src="{% static 'style/images/art/tm2.jpg' %}" alt=""></div>
+          <h5 class="mb-0">Coriss Ambady</h5>
+          <p class="mb-10">Computer Engineer</p>
+          <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor adipiscing.</p>
+          <ul class="social social-color social-s">
+            <li><a href="#"><i class="et-twitter"></i></a></li>
+            <li><a href="#"><i class="et-facebook"></i></a></li>
+            <li><a href="#"><i class="et-pinterest"></i></a></li>
+            <li><a href="#"><i class="et-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <!-- /column -->
+        <div class="col-sm-4 col-md-3 text-center">
+          <div class="icon icon-img text-center mb-20"> <img src="{% static 'style/images/art/tm3.jpg' %}" alt=""></div>
+          <h5 class="mb-0">Barclay Widerski</h5>
+          <p class="mb-10">Sales Manager</p>
+          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum .</p>
+          <ul class="social social-color social-s">
+            <li><a href="#"><i class="et-twitter"></i></a></li>
+            <li><a href="#"><i class="et-facebook"></i></a></li>
+            <li><a href="#"><i class="et-pinterest"></i></a></li>
+            <li><a href="#"><i class="et-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <!-- /column -->
+
+      </div>
+      <!--/.row -->
+
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.light-wrapper -->
+
+  <div class="wrapper gray-wrapper">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Our Skills</h3>
+          <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante.</p>
+          <ul class="progress-list">
+            <li>
+              <p>CSS/HTML</p>
+              <div class="progressbar line border" data-value="90"></div>
+            </li>
+            <li>
+              <p>Wordpress</p>
+              <div class="progressbar line border" data-value="80"></div>
+            </li>
+            <li>
+              <p>jQuery</p>
+              <div class="progressbar line border" data-value="85"></div>
+            </li>
+            <li>
+              <p>Drupal</p>
+              <div class="progressbar line border" data-value="65"></div>
+            </li>
+          </ul>
+          <!-- /.progress-list -->
+        </div>
+        <!--/column -->
+        <div class="col-sm-4">
+          <h3>Why Choose Us?</h3>
+          <div class="panel-group panel-group-lined" id="accordion">
+            <div class="panel">
+              <div class="panel-heading">
+                <div class="panel-title"><a data-toggle="collapse" class="panel-toggle active" data-parent="#accordion" href="#accordion1-1">100% Responsive</a></div>
+              </div>
+              <div id="accordion1-1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                </div>
+              </div>
+            </div>
+            <!-- /.panel -->
+            <div class="panel">
+              <div class="panel-heading">
+                <div class="panel-title"><a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#accordion1-2">Clean & Professional Design</a></div>
+              </div>
+              <div id="accordion1-2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+              </div>
+            </div>
+            <!-- /.panel -->
+            <div class="panel">
+              <div class="panel-heading">
+                <div class="panel-title"><a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#accordion1-3">Pixel-Perfect Coding</a></div>
+              </div>
+              <div id="accordion1-3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </div>
+            </div>
+            <!-- /.panel -->
+          </div>
+          <!-- /.panel-group -->
+        </div>
+        <!--/column -->
+        <div class="col-sm-4">
+          <h3>Our Featured Services</h3>
+          <div class="feature feature-s"> <span class="icon icon-color icon-m"><i class="si-design_pen-tool"></i></span>
+            <h5>Clean & Professional Design</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio dapibus ac facilisis in egestas.</p>
+          </div>
+          <!--/.feature -->
+
+          <div class="feature feature-s"> <span class="icon icon-color icon-m"><i class="si-seo_optimization-growth-stats"></i></span>
+            <h5>SEO-Friendly</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio dapibus ac facilisis in egestas.</p>
+          </div>
+          <!--/.feature -->
+
+          <div class="feature feature-s"> <span class="icon icon-color icon-m"><i class="si-design_color-drop"></i></span>
+            <h5>Color Palettes</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio dapibus ac facilisis in egestas.</p>
+          </div>
+          <!--/.feature -->
+        </div>
+        <!--/column -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.gray-wrapper -->
+
+  <div class="video-parallax inverse-text" data-aos="fade">
+    <div class="video-parallax-inner">
+      <video preload="metadata" poster="{% static 'style/media/office.jpg' %}" playsinline autoplay muted loop>
+        <source src="{% static 'style/media/office.mp4' %}" type="video/mp4">
+      </video>
+      <div class="content-overlay container text-center">
+        <h2 class="section-title larger text-center">Video Parallax</h2>
+        <p class="lead larger">For better visualization of your company</p>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.video-parallax-inner -->
+  </div>
+  <!-- /.video-parallax -->
+
+<footer class="gray-wrapper footer-bg footer-bg3">
+  <div class="sub-footer">
+    <div class="container inner pt-60 pb-30 text-center"> <img src="#" srcset="style/images/logo.png 1x, style/images/logo@2x.png 2x" alt="" />
+      <div class="space20"></div>
+      <p>© 2017 crea;tink. All rights reserved. Theme by elemis.</p>
+      <div class="space20"></div>
+      <ul class="social social-bg social-s">
+        <li><a href="#"><i class="et-twitter"></i></a></li>
+        <li><a href="#"><i class="et-facebook"></i></a></li>
+        <li><a href="#"><i class="et-pinterest"></i></a></li>
+        <li><a href="#"><i class="et-vimeo"></i></a></li>
+        <li><a href="#"><i class="et-instagram"></i></a></li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.sub-footer -->
+</footer>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script type="text/javascript" src="{% static 'style/js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/js/plugins.js' %}"></script>
+<script type="text/javascript" src="{% static 'style/js/scripts.js' %}"></script>
+
+</body>
+</html>
